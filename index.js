@@ -22,6 +22,7 @@ app.get('/api/proxy', async (req, res) => {
     // 🧠 Extrae las credenciales del encabezado Authorization
     const authHeader = req.headers.authorization;
     console.log(fullUrl);
+    console.log(authHeader);
 
     try {
         const response = await axios.get(fullUrl, {
